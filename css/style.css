@@ -1,0 +1,224 @@
+:root {
+  --main-title-color: #fff;
+  --text-color: #303030;
+  --two-text-color: #212121;
+  --three-text-color: #757575;
+  --text-button: #fff;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style-type: none;
+}
+.header {
+  background: #ffffff;
+  border: 1px solid #ececec;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.logo span {
+  color: #000;
+}
+.navigation-menu li a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--two-text-color);
+}
+.navigation-menu li a:hover,
+.navigation-menu li a:focus {
+  color: #2196f3;
+  transition: 0.8s;
+}
+.header-contact li a {
+  color: var(--three-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.18;
+}
+.header-contact li a:hover,
+.header-contact li a:focus {
+  color: #2196f3;
+  transition: 0.8s;
+}
+.top-main {
+  background-color: #2f303a;
+}
+.top-main h1 {
+  color: var(--main-title-color);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.37;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.top-main button {
+  color: var(--text-button);
+  font-size: 16px;
+  font-style: normal;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+}
+/* ---------------------us-work */
+.us-work-txt {
+  background-color: #fff;
+}
+.us-work-txt ul li h3 {
+  color: var(--two-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.us-work-txt ul li p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--three-text-color);
+}
+.us-work-img {
+  background-color: #fff;
+}
+.us-work-img h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--two-text-color);
+}
+/* ----------us-team */
+.us-team {
+  background-color: #f5f4fa;
+}
+.us-team h2 {
+  color: var(--two-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.us-team ul li {
+  background-color: #fff;
+  height: 368px;
+  width: 270px;
+}
+.us-team ul li h3 {
+  color: var(--two-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.us-team ul li p {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--three-text-color);
+}
+/* --------------------footer */
+
+.footer {
+  background-color: #2f303a;
+  width: 100%;
+  height: 252px;
+}
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.logo-footer span {
+  color: #fff;
+}
+address ul li a {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+address ul li:nth-child(1) > a {
+  color: #fff;
+}
+address ul li a:hover,
+address ul li a:focus:focus {
+  transition: 0.8s;
+  color: #fff;
+}
+
+/* ---------------------portfolio */
+.portfolio-button {
+  width: 128px;
+  height: 38px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--two-text-color);
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: #2196f3;
+  transition: 0.6s;
+  color: #fff;
+}
+.portfolio-card {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+  background: #fff;
+}
+.portfolio-card-txt-one {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--two-text-color);
+}
+.portfolio-card-txt-two {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--three-text-color);
+}
