@@ -6,8 +6,22 @@
   --text-button: #fff;
 }
 
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: "roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
@@ -15,9 +29,28 @@ body {
 .list {
   list-style-type: none;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* --------------♥♥♥--header--♥♥♥  */
+
 .header {
   background: #ffffff;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+.header nav {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -25,11 +58,17 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
+  letter-spacing: 0.03em;  color: #21215f3;
+1}
 .logo span {
   color: #000;
+}
+.navigation-menu {
+  display: flex;
+  margin-left: 93px;
+}
+.navigation-menu li + li {
+  margin-left: 50px;
 }
 .navigation-menu li a {
   font-weight: 500;
@@ -37,17 +76,31 @@ body {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--two-text-color);
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .navigation-menu li a:hover,
 .navigation-menu li a:focus {
   color: #2196f3;
   transition: 0.8s;
 }
+.header-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact li + li {
+  margin-left: 50px;
+}
 .header-contact li a {
   color: var(--three-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.18;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .header-contact li a:hover,
 .header-contact li a:focus {
@@ -56,6 +109,9 @@ body {
 }
 .top-main {
   background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 94px;
 }
 .top-main h1 {
   color: var(--main-title-color);
@@ -67,6 +123,7 @@ body {
   text-transform: uppercase;
 }
 .top-main button {
+  display: inline-block;
   color: var(--text-button);
   font-size: 16px;
   font-style: normal;
@@ -80,12 +137,24 @@ body {
   border: none;
   border-radius: 4px;
   width: 200px;
-  height: 50px;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 /* ---------------------us-work */
 .us-work-txt {
   background-color: #fff;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
 }
+.us-work-txt ul{
+  display: flex;
+}
+.us-work-txt ul li + li{
+  margin-left: 30px;
+}
+
 .us-work-txt ul li h3 {
   color: var(--two-text-color);
   font-weight: bold;
@@ -102,18 +171,33 @@ body {
 }
 .us-work-img {
   background-color: #fff;
+  padding-bottom: 94px;
 }
+.us-work-img ul{
+  display: flex;
+  margin-top: 50px;
+}
+.us-work-img ul li + li {
+  margin-left: 30px;
+}
+.us-work-img img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 .us-work-img h2 {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-align: center;
   color: var(--two-text-color);
+  text-align: center;
 }
 /* ----------us-team */
 .us-team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .us-team h2 {
   color: var(--two-text-color);
@@ -121,12 +205,25 @@ body {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-align: center;
+  
+}
+.us-team img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.us-team ul{
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 30px;
 }
 .us-team ul li {
   background-color: #fff;
   height: 368px;
   width: 270px;
+}
+.us-team ul li + li {
+  margin-left: 30px;
 }
 .us-team ul li h3 {
   color: var(--two-text-color);
@@ -135,6 +232,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-top: 30px;
 }
 .us-team ul li p {
   font-size: 16px;
@@ -142,13 +240,18 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--three-text-color);
+  margin-top: 10px;
 }
 /* --------------------footer */
 
 .footer {
   background-color: #2f303a;
   width: 100%;
-  height: 252px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.footer h2{
+  margin-bottom: 20px;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -158,6 +261,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #2196f3;
+
 }
 .logo-footer span {
   color: #fff;
@@ -179,15 +283,19 @@ address ul li a:focus:focus {
 }
 
 /* ---------------------portfolio */
+.portfolio-main{
+  width: 100%;
+  padding-top: 92px;
+  padding-bottom: 96px;
+}
 .portfolio-button {
-  width: 128px;
-  height: 38px;
+  width: 100%;
+  padding: 6px 22px;
   background-color: #f5f4fa;
   border-radius: 4px;
   border: none;
   cursor: pointer;
   color: var(--two-text-color);
-  font-weight: 500;
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -195,17 +303,49 @@ address ul li a:focus:focus {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.portfolio-btn{
+  display: flex;
+  justify-content: center;
+}
+.portfolio-btn li + li{
+  margin-left: 8px;
+}
+
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: #2196f3;
   transition: 0.6s;
   color: #fff;
 }
+.container-portfolio-card{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;  
+}
+
+
+.container-portfolio-card li{
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.container-portfolio-card li:nth-child(3n+1){
+  margin-left: 0;
+}
+.container-portfolio-card li:nth-child(n+7){
+  margin-bottom: 0px;
+}
 .portfolio-card {
   width: 370px;
-  height: 404px;
-  border: 1px solid #eeeeee;
   background: #fff;
+  border: 1px solid #eeeeee;
+  padding-bottom: 10px;
+
+}
+.portfolio-card img{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .portfolio-card-txt-one {
   font-size: 18px;
@@ -214,6 +354,7 @@ address ul li a:focus:focus {
   letter-spacing: 0.06em;
   text-align: left;
   color: var(--two-text-color);
+
 }
 .portfolio-card-txt-two {
   font-size: 16px;
@@ -221,4 +362,8 @@ address ul li a:focus:focus {
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--three-text-color);
+
+}
+.portfolio-card-txt-container{
+  padding: 20px 24px;
 }

@@ -10,11 +10,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Главная </title>
 </head>
 <body>
-<header class="header"> 
+<header class="header "> 
+    <div class="container header-container">
     <nav>
         <a href="./index.html" class="logo link" lang="en">Web<span>Studio</span></a>
         <ul class="navigation-menu">
@@ -31,14 +33,16 @@
     
     
 
-        
+</div>
 </header>
 <main>
-    <section class="top-main">
+    <section class="top-main ">
+        
             <h1>Эффективные решения <br> для вашего бизнеса</h1>
             <button type="button">Заказать услугу</button>
     </section>
         <section class="us-work-txt">
+            <div class="container">
             <ul>
                 <li class="list">
                     <h3>Внимание к деталям</h3>
@@ -57,24 +61,28 @@
                     <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
         <section class="us-work-img">
-            <h2>Чем мы занимаемся</h2>
-            <ul>
-                <li class="list">
-                    <a href="#"><img src="./images/1.jpg" width="370" height="294" alt="Дизайн"></a>
-                </li>
-                <li class="list">
-                    <a href="#"><img src="./images/2.jpg" width="370" height="294" alt="Веб"></a>
-                </li>
-                <li class="list">
-                    <a href="#"><img src="./images/3.jpg" width="370" height="294" alt="Кодинг"></a>
-                </li>
-            </ul>
+            <div class="container">
+                <h2>Чем мы занимаемся</h2>
+                <ul>
+                    <li class="list">
+                        <a href="#"><img src="./images/1.jpg" width="370" height="294" alt="Дизайн"></a>
+                    </li>
+                    <li class="list">
+                        <a href="#"><img src="./images/2.jpg" width="370" height="294" alt="Веб"></a>
+                    </li>
+                    <li class="list">
+                        <a href="#"><img src="./images/3.jpg" width="370" height="294" alt="Кодинг"></a>
+                    </li>
+                </ul>
+            </div>
         </section>  
 
 
         <section class="us-team">
+            <div class="container">
             <h2>Наша команда</h2>
                     <ul>
                         <li class="list">
@@ -101,10 +109,12 @@
                             <p>UI Designer</p>
                         </li>
                     </ul>
+                 </div>
         </section><!-- us-team -->
 
 </main>
         <footer class="footer">
+            <div class="container">
             <h2><a href="./index.html" class="link logo-footer" lang="en">Web<span>Studio</span></a></h2>
              <address>
                 <ul>
@@ -113,6 +123,7 @@
                     <li class="list"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
                 </ul>
              </address>
+            </div>
         </footer>
    
 </body>
